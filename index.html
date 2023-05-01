@@ -5,7 +5,12 @@
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+    <title>William Dhenin</title>
+    <link rel="apple-touch-icon" sizes="180x180" href="images/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="images/favicon/favicon-16x16.png">
+    <link rel="manifest" href="images/favicon/site.webmanifest">
+    <link rel="mask-icon" href="images/favicon/safari-pinned-tab.svg" color="#5bbad5">
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -22,16 +27,16 @@
         <img class="icon icon--white nav__toggler" src="images/menu.svg" alt=""/>
         <ul class="list nav__list collapsible__content">
             <li class="nav__item">
-                <a target="_blank" href="#">01. About</a>
+                <a href="#about">01. About</a>
             </li>
             <li class="nav__item">
-                <a target="_blank" href="#">02. Skills</a>
+                <a href="#skill">02. Skills</a>
             </li>
             <li class="nav__item">
-                <a target="_blank" href="#">03. Resume</a>
+                <a href="#resume">03. Resume</a>
             </li>
             <li class="nav__item">
-                <a target="_blank" href="#">04. Contact</a>
+                <a href="#contact">04. Contact</a>
             </li>
         </ul>
     </nav>
@@ -42,14 +47,14 @@
             <h2 class="block__heading">> Hello world, <br> > I'm William Dhenin_</h2>
             <p class="hero__tagline">I am a software engineer mainly backend oriented.
                 Currently, I am focused on building great payment solutions at Lyra Network.</p>
-            <a href="" class="btn btn--primary">Download CV</a>
-            <a href="" class="btn btn--primary">Contact Me</a>
+            <a href="assets/resume.pdf" class="btn btn--primary"  target="_blank">Download CV</a>
+            <a href="#contact" class="btn btn--primary">Contact Me</a>
         </header>
         <img class="hero__image" src="images/computer.svg" alt="">
     </div>
 </section>
 
-<section class="block about">
+<section id="about" class="block about">
     <div class="container grid grid--1x2">
         <header class="block__header about__content">
             <h3 class="block__heading">> echo ${about_me}</h3>
@@ -65,17 +70,324 @@
         <img class="about__image" src="images/chess.svg" alt="">
     </div>
 </section>
-<section class="block">
+<section id="skill" class="block block--dark block--skewed-right skill">
     <div class="container">
-        <header class="block__header">
-            <h1 class="block__heading">Heading 1</h1>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab aliquam dignissimos fugiat magni porro
-                tempora
-                tenetur? Animi harum iure repellendus.
-            </p>
+        <header>
+            <h3 class="block__heading">> ls -a skills</h3>
         </header>
+        <div class="grid grid--1x2">
+            <div class="skill__content">
+                <div class="skill__item">
+                    <header class="skill__header"><h4>Java</h4></header>
+                    <div class="skill__bar">
+                        <div class="skill__bar--java"></div>
+                    </div>
+                </div>
+                <div class="skill__item">
+                    <header class="skill__header"><h4>C#</h4></header>
+                    <div class="skill__bar">
+                        <div class="skill__bar--net"></div>
+                    </div>
+                </div>
+                <div class="skill__item">
+                    <header class="skill__header"><h4>SQL</h4></header>
+                    <div class="skill__bar">
+                        <div class="skill__bar--sql"></div>
+                    </div>
+                </div>
+                <div class="skill__item">
+                    <header class="skill__header"><h4>HTML/CSS</h4></header>
+                    <div class="skill__bar">
+                        <div class="skill__bar--html"></div>
+                    </div>
+                </div>
+                <div class="skill__item">
+                    <header class="skill__header"><h4>JavaScript</h4></header>
+                    <div class="skill__bar">
+                        <div class="skill__bar--js"></div>
+                    </div>
+                </div>
+                <div class="skill__item">
+                    <header class="skill__header"><h4>Docker</h4></header>
+                    <div class="skill__bar">
+                        <div class="skill__bar--docker"></div>
+                    </div>
+                </div>
+                <div class="skill__item">
+                    <header class="skill__header"><h4>Jenkins</h4></header>
+                    <div class="skill__bar">
+                        <div class="skill__bar--jenkins"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="skill__cloud">
+                <canvas id="skill__canvas" width="300" height="300"> </canvas>
+                <div id="tags">
+                    <ul>
+                        <li><a href="#" >Git</a></li>
+                        <li><a href="#" >Spring</a></li>
+                        <li><a href="#" >Flutter</a></li>
+                        <li><a href="#" >Linux</a></li>
+                        <li><a href="#" >React</a></li>
+                        <li><a href="#" >Angular</a></li>
+                        <li><a href="#" >TypeScript</a></li>
+                        <li><a href="#" >Jira</a></li>
+                        <li><a href="#" >Git</a></li>
+                        <li><a href="#" >Bash</a></li>
+                        <li><a href="#" >Node.js</a></li>
+                        <li><a href="#" >Oracle</a></li>
+                        <li><a href="#" >MariaDB</a></li>
+                        <li><a href="#" >Jboss</a></li>
+                        <li><a href="#" >GraphQL</a></li>
+                        <li><a href="#" >BEM</a></li>
+                        <li><a href="#" >npm</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+<section id="resume" class="block resume">
+    <div class="container">
+        <header>
+            <h3 class="block__heading">> cat resume.txt</h3>
+        </header>
+        <div class="grid grid--1x2">
+            <div class="resume__education">
+                <h4 class="resume__header">education</h4>
+                <div class="card">
+                    <header class="card__header">
+                        <div class="card__header__left">
+                            <h4 class="card__title">Déodat de Severac
+                            </h4>
+                            <div class="card__subtitle">
+                                Toulouse
+                            </div>
+                        </div>
+                        <div class="card__header__right">
+                            <div class="card__badge">
+                        <span class="badge badge--primary">
+                            Sep 2008 - Jun 2012
+                        </span>
+                            </div>
+                        </div>
+                    </header>
+                    <div class="card__body">
+                        Scientific A-Level with honors.<br>
+                        First year of preparatory courses.
+                    </div>
+                    <div class="card__footer">
+                        Diploma, courses
+                    </div>
+                </div>
+                <div class="card">
+                    <header class="card__header">
+                        <div class="card__header__left">
+                            <h4 class="card__title">Saliège
+                            </h4>
+                            <div class="card__subtitle">
+                                Balma
+                            </div>
+                        </div>
+                        <div class="card__header__right">
+                            <div class="card__badge">
+                        <span class="badge badge--primary">
+                            Sep 2012 - Jun 2014
+                        </span>
+                            </div>
+                        </div>
+                    </header>
+                    <div class="card__body">
+                        Majoring in PSI (Physics & Engineering Science)<br>
+                        Classes preparing for the entrance to the top French Engineering schools
+                    </div>
+                    <div class="card__footer">
+                        Courses
+                    </div>
+                </div>
+                <div class="card">
+                    <header class="card__header">
+                        <div class="card__header__left">
+                            <h4 class="card__title">INP-ENSEEIHT
+                            </h4>
+                            <div class="card__subtitle">
+                                Toulouse
+                            </div>
+                        </div>
+                        <div class="card__header__right">
+                            <div class="card__badge">
+                        <span class="badge badge--primary">
+                            Sep 2014 - Sep 2017
+                        </span>
+                            </div>
+                        </div>
+                    </header>
+                    <div class="card__body">
+                        Master of engineering<br>
+                        Majoring in Computer Science and Applied Mathematics<br>
+                        Specialization in MuLtimedia
+                    </div>
+                    <div class="card__footer">
+                        Diploma
+                    </div>
+                </div>
+            </div>
+            <div class="resume__experience">
+                <h4 class="resume__header">experiences</h4>
+                <div class="card">
+                    <header class="card__header">
+                        <div class="card__header__left">
+                            <h4 class="card__title">Drivernet
+                            </h4>
+                            <div class="card__subtitle">
+                                Internship
+                            </div>
+                        </div>
+                        <div class="card__header__right">
+                            <div class="card__badge">
+                            <span class="badge badge--primary">
+                                Jun 2016 - Aug 2016
+                            </span>
+                            </div>
+                        </div>
+                    </header>
+                    <div class="card__body">
+                        Android app development intended to be used by drivers in order to help them for their deliveries
+                    </div>
+                    <div class="card__footer">
+                        Java, Google Geofences, MySQL, Git
+                    </div>
+                </div>
+                <div class="card">
+                    <header class="card__header">
+                        <div class="card__header__left">
+                            <h4 class="card__title">Capgemini
+                            </h4>
+                            <div class="card__subtitle">
+                                Technical Lead
+                            </div>
+                        </div>
+                        <div class="card__header__right">
+                            <div class="card__badge">
+                            <span class="badge badge--primary">
+                                Sep 2016 - May 2021
+                            </span>
+                            </div>
+                        </div>
+                    </header>
+                    <div class="card__body">
+                        Maintenance of a set of .NET applications for Safran AE/ED <br>
+                        Build the management system for assistance in the diagnosis and maintenance of the Rafale aircraft engine.
+                    </div>
+                    <div class="card__footer">
+                       C#, .NET, TypeScript, SQL Server, Oracle, Svn
+                    </div>
+                </div>
+                <div class="card">
+                    <header class="card__header">
+                        <div class="card__header__left">
+                            <h4 class="card__title">Sopra Steria
+                            </h4>
+                            <div class="card__subtitle">
+                                Technical Lead
+                            </div>
+                        </div>
+                        <div class="card__header__right">
+                            <div class="card__badge">
+                            <span class="badge badge--primary">
+                                May 2021 - Aug 2021
+                            </span>
+                            </div>
+                        </div>
+                    </header>
+                    <div class="card__body">
+                        Leading the development of multiple web applications
+                    </div>
+                    <div class="card__footer">
+                        Sharepoint, Java, Git
+                    </div>
+                </div>
+                <div class="card">
+                    <header class="card__header">
+                        <div class="card__header__left">
+                            <h4 class="card__title">Lyra Network
+                            </h4>
+                            <div class="card__subtitle">
+                                Software Engineer
+                            </div>
+                        </div>
+                        <div class="card__header__right">
+                            <div class="card__badge">
+                            <span class="badge badge--primary">
+                                Sep 2021 - present
+                            </span>
+                            </div>
+                        </div>
+                    </header>
+                    <div class="card__body">
+                       Build new payment means and maintenance of the existing ones.
+                    </div>
+                    <div class="card__footer">
+                        Java, Spring Boot, MariaDB, Docker, Jenkins, Git
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section id="contact" class="block block--dark contact">
+    <div class="container">
+        <header class="contact__header">
+            <h3 class="block__heading">> find .contacts</h3>
+        </header>
+        <div class="contact__content">
+            Althought, I am not looking for any new opportunities, you can still contact me for any questions.
+
+            <div class="contact__icon">
+                <div class="icon__item">
+                    <img class="icon__image" src="images/contact/mail.png" alt="">
+                </div>
+                <div class="icon__item">
+                    <img class="icon__image" src="images/contact/github.png" alt="">
+                </div>
+                <div class="icon__item">
+                    <img class="icon__image" src="images/contact/linkedin.png" alt="">
+                </div>
+                <div class="icon__item">
+                    <img class="icon__image" src="images/contact/twitter.png" alt="">
+                </div>
+            </div>
+        </div>
+        <footer class="contact__footer">
+            Develop & Build by William Dhenin © Copyright 2023
+        </footer>
     </div>
 </section>
 <script src="js/main.js"></script>
+<script src="js/tagcanvas.min.js"></script>
+<script>
+    window.onload = function() {
+        try {
+            TagCanvas.Start('skill__canvas','tags',{
+                textFont: 'Source Code Pro, Arial',
+                textColour: '#FFF',
+                reverse: true,
+                initial: [0.4,-0.3],
+                depth: 0.3,
+                minSpeed: 0.02,
+                maxSpeed: 0.02,
+                wheelZoom: false,
+                noSelect: true,
+                noMouse: true
+            });
+        } catch(e) {
+            // something went wrong, hide the canvas container
+            document.getElementsByClassName('skill__cloud').style.display = 'none';
+        }
+    };
+
+</script>
 </body>
 </html>

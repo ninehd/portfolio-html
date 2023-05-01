@@ -134,6 +134,7 @@ p {
     border-radius: 7px;
     box-shadow: 0 0 20px 2px lightgray;
     background-color: rgba(201, 200, 199, 0.63);
+    margin: 2rem 1rem;
 }
 .card__header {
     display: flex;
@@ -169,19 +170,6 @@ p {
     font-weight: 700;
 }
 
-/* Skills */
-
-.skill__bar {
-    width: 100%; /* Full width */
-    background-color: #ddd; /* Grey background */
-    height: 10px;
-}
-.skill__bar--java {
-    height: 10px;
-    width: 90%;
-    background-color: #04AA6D;
-}
-
 /* Blocks */
 .block{
     --padding-vertical: 6rem;
@@ -208,7 +196,7 @@ p {
 }
 
 .block--skewed-right {
-    padding-bottom: calc(var(--padding-vertical) + 4rem);
+    padding-bottom: calc(var(--padding-vertical) + 10rem);
     clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 80%);
 }
 
@@ -377,6 +365,7 @@ a {
     letter-spacing: 1px;
     margin: 2rem 0 5rem;
 }
+
 .hero__image{
     width: 100%;
     margin-top: 12rem;
@@ -402,10 +391,11 @@ a {
 
 .about {
     color: var(--color-primary);
+    padding-top:  4rem;
 }
 .about__image{
     max-width: 200px;
-   align-self: end;
+    align-self: end;
     filter: invert(13%) sepia(24%) saturate(534%) hue-rotate(193deg) brightness(94%) contrast(91%);
     justify-self: center;
 }
@@ -417,4 +407,119 @@ a {
         grid-template-rows: auto;
         grid-template-columns: 60% 1fr;
     }
+}
+
+
+/* Skills */
+
+.skill {
+    clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 90%);
+}
+
+
+.skill__content {
+    padding: 0 2rem;
+}
+
+.skill__item h4 {
+    color : white;
+    margin-top: 3rem;
+}
+
+
+
+.skill__bar {
+    width: 100%; /* Full width */
+    background-color: #817f7f; /* Grey background */
+    height: 10px;
+}
+.skill__bar--java {
+    height: 10px;
+    width: 85%;
+    background-color: #2bf5f5;
+}
+.skill__bar--net {
+    height: 10px;
+    width: 70%;
+    background-color: #d51e80;
+}
+.skill__bar--sql {
+    height: 10px;
+    width: 85%;
+    background-color: #9ad944;
+}
+.skill__bar--html {
+    height: 10px;
+    width: 70%;
+    background-color: #e14124;
+}
+.skill__bar--js {
+    height: 10px;
+    width: 80%;
+    background-color: #e5d627;
+}
+.skill__bar--docker {
+    height: 10px;
+    width: 60%;
+    background-color: #0f7bc7;
+}
+.skill__bar--jenkins {
+    height: 10px;
+    width: 60%;
+    background-color: #ffffff;
+}
+
+
+#skill__canvas {
+    width: 100%;
+}
+
+
+.skill__cloud {
+    padding: 1rem;
+    align-self: center;
+}
+
+@media screen and (min-width: 768px) {
+    .skill{
+        padding-top: 4rem;
+    }
+
+    .skill__content {
+        text-align: left;
+    }
+}
+
+
+/* Resume */
+.resume__header {
+text-align: center;
+font-style: italic;
+}
+
+/* Contact */
+.contact__header {
+    margin-bottom: 5rem;
+
+}
+
+
+.contact__content, .contact__footer{
+    text-align: center;
+}
+
+.contact__icon{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 0 5rem;
+    margin: 10rem auto;
+    align-items: center;
+    text-shadow: #FFFFFF 0 0 0.5em;
+}
+
+.icon__image{
+    width: 128px;
+    margin: 1rem;
+    filter: brightness(0) invert(1) drop-shadow(0px 0px 3px #FFFFFF);
 }
